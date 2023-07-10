@@ -13,6 +13,9 @@
   a {
     text-decoration: none;
   }
+li{
+  color: #FFF;
+}
   ul {
     list-style: none;
     padding: 0;
@@ -26,12 +29,13 @@
     top: 2px;
 }
 .links{
-    display: flex;
-    position: absolute;    
-    justify-content: right;
-    margin-left: 65%;
-    margin-top: 1%;
+    display: block;
+    position: fixed;    
+    justify-content: center;
+    right:50px;
+    top: 30px;
     color: #FFF;
+    
 }
 
   .container {
@@ -124,6 +128,10 @@
   .landing-page header .links li:not(:last-child):hover {
     color: #6c63ff;
   }
+  .landing-page header .links li:not(:last-child) {
+    color: #FFF;
+  }
+
   .landing-page .content .container {
     display: flex;
     align-items: center;
@@ -146,14 +154,14 @@
     }
   }
   .landing-page .content .info h1 {
-    color: #5d5d5d;
+    color: #FFF;
     font-size: 44px;
   }
   .landing-page .content .info p {
     margin: 0;
     line-height: 1.6;
     font-size: 15px;
-    color: #5d5d5d;
+    color: #FFF;
   }
   .landing-page .content .info button {
     border: 0;
