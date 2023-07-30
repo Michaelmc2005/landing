@@ -16,16 +16,19 @@ li, a, button{
 
 }
 
-
-
-
+body {
+    padding-bottom: 10%;
+}
+html{
+    overflow-x: hidden;
+}
 header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-left: 20px; 
     padding-right: 20px;
-    background-color:rgb(196, 224, 216)
+    background-color:rgb(196, 224, 216);
 }
 
 .logo{
@@ -77,8 +80,9 @@ button:hover{
 }
 
 .container{
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
+
     
 }
 .content .container .image img{
@@ -86,7 +90,7 @@ button:hover{
     width :900px;
     height : auto;
     padding-top: 0px;
-    padding-right: 20%;
+    padding-right: 10%;
    
 }
 .content .container .info h1{
@@ -117,10 +121,185 @@ section .main{
 .middle-information h1 {
     
     line-height: 1.6;
-    font-size: 100px;
-    color: #ef0505;
+    font-size: 50px;
+    color: #6b897c;
     padding-bottom: 20px;
-    padding-top: 1000px;
+    padding-top: 150px;
     margin-left: 3%;
     
   }
+  section.how-we-work, section.chrome-extension{
+    margin: 50px auto;
+    background-color: rgb(196, 224, 216);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.how-we-work-header, .chrome-extension-header{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #6b897c;
+}
+
+.text-details{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #1f1c1c;
+}
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 1em;
+    color: #1f1c1c;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: rgb(243, 114, 202);
+}
+.connect-with-us{
+    margin: 50px auto;
+    background-color: rgb(196, 224, 216);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.connect-header, .newsletter-header{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #6b897c;
+}
+
+.social-links{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.social-links img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.newsletter-form{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.newsletter-form input[type=email]{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-form .subscribe-btn{
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius :5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+
+.newsletter-form .subscribe-btn:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.social-links a.fab.fa-twitter:hover {
+    color: blue;
+}
+
+.social-links a.fab.fa-instagram:hover {
+    color: pink;
+}
+
+.social-links a.fab.fa-instagram {
+    margin-left: 20px;
+}
+
+.social-links a.fab.fa-tiktok-icon {
+    position: fixed;
+
+}
+
+.social-links a.fab.fa-tiktok:before,
+.social-links a.fab.fa-tiktok:after {
+    content: "\e07b";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.social-links a.fab.fa-tiktok:before {
+    color: pink;
+    transform: translate(-1px, -1px);
+}
+
+.social-links a.fab.fa-tiktok:after {
+    color: blue;
+    transform: translate(1px, 1px);
+}
+
+.social-links a.fab.fa-tiktok:hover:before,
+.social-links a.fab.fa-tiktok:hover:after {
+    opacity: 1;
+}
+
+.social-links a.fab.fa-tiktok:hover:before {
+    transform: translate(-3px, -3px);
+}
+
+.social-links a.fab.fa-tiktok:hover:after {
+    transform: translate(3px, 3px);
+}
+
+
+
+.social-icon {
+    position: relative;
+}
+
+.tiktok-icon {
+    z-index: 5;
+}
+
+.tiktok-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.tiktok-hover-pink {
+    color: pink;
+    transform: translate(-1px, -1px);
+}
+
+.tiktok-hover-blue {
+    color: blue;
+    transform: translate(1px, 1px);
+}
+
+.social-icon:hover .tiktok-hover {
+    opacity: 1;
+}
+
+.social-icon:hover .tiktok-hover-pink {
+    transform: translate(-3px, -3px);
+}
+
+.social-icon:hover .tiktok-hover-blue {
+    transform: translate(3px, 3px);
+}
